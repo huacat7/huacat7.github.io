@@ -32,6 +32,29 @@
             </nav>
             <h1 class="contact_us">CONTACT US</h1>
         </header>
+
+        <main>
+            <form>
+                <div class="required">
+                    <label for="name">NAME: </label>
+                    <br><input type="text" id="name" name="name"><br>
+
+                    <label for="email">EMAIL: </label>
+                    <br><input type="text" id="email" name="email"><br>
+
+                    <label for="date-in">DATE-IN: </label>
+                    <br><input type="date" id="date-in" name="date-in"><br>
+
+                    <label for="date-out">DATE-OUT: </label>
+                    <br><input type="date" id="date-out" name="date-out"><br>
+                </div>  
+                <div class="additional">
+                    <label for="comment">COMMENT: </label> 
+                    <br><textarea id="comment" name="comment" placeholder="Anything else you would like us to know..." rows="10" cols="50"></textarea><br>
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </main>
         
         <script>
             document.querySelector('.nav-toggle').addEventListener('click', function () {
