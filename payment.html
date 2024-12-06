@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1, shrink-to-fit=no">
+        <title>Payment</title>
+        <script src="js/script.js"></script>
+        <link rel="stylesheet" href="css/payment.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Unica+One&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Unica+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-icon">☰</span> <!-- Use a symbol or icon for the hamburger -->
+                <span class="exit-icon">✖</span> <!-- Use a symbol or icon for the exit -->
+            </button>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <h1 class="payment">PAYMENT</h1>
+        </header>
+
+        <main>
+            <img src="images/butt.jpg" alt="butt" class="butt">
+        </main>
+
+        <a href="payment.html">
+            <button type="submit">SUBMIT</button>
+        </a>
+        <h2>We'll Be in Touch!</h2>
+
+        <footer>
+            <p>WhiskerCare</p>
+            <img src="images/logo.jpg" alt="logo" class="logo">
+        </footer>
+
+        
+        <script>
+            document.querySelector('.nav-toggle').addEventListener('click', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle('nav-open');
+            });
+        
+          </script>
+    </body>
+</html>

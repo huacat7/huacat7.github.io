@@ -115,56 +115,24 @@ nav a:hover {
     color: #FFFBF5;
 }
 
-.contact_us {
+.payment {
     grid-column: 1;
     grid-row: 1;
     margin: 0;
     align-self: end;
 }
 
-/*Styled Form*/
+/*Styled Form & image*/
 main {
     display: flex;
-    justify-content: center;
-    padding: 20px;
+    align-items: center;
 }
 
-form {
-    width: 90%;
-    margin-bottom: -25px;
-}
-
-form label {
-    color: #6A8C62;
-    font-family: "Unica One", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-}
-
-form input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 3px;
-    border: 1px solid #6A8C62;
-    font-family: "Unica One", sans-serif;
-}
-
-button {
-    background-color: #6A8C62;
-    border-radius: 10px;
-    width: 80px;
-    height: 5%;
-    margin: 0 43%;
-    font-family: "Unica One", sans-serif;
-    color: white;
-}
-
-h2 {
-    margin-top: 8px;
+.butt {
     display: flex;
-    width: 100%;
-    justify-content: center;
+    width: 90%;
+    justify-content: center;  
+    align-items: center;
 }
 
 footer {
@@ -177,7 +145,7 @@ footer {
     padding: 0 20px;
 }
 
-img{
+.logo{
     margin-top: 5px;
     height: 30px;
     justify-self:flex-end;
