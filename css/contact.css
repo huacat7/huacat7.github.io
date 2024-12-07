@@ -158,6 +158,7 @@ button {
     margin: 0 43%;
     font-family: "Unica One", sans-serif;
     color: white;
+    cursor: pointer;
 }
 
 h2 {
@@ -172,7 +173,8 @@ footer {
     height: 40px;
     display: flex;
     justify-content: space-between;
-    margin-top: -15px;
+    margin-top: 25px;
+    margin-bottom: 0px;
     background-color: #E7D4B5;
     padding: 0 20px;
 }
@@ -184,12 +186,30 @@ img{
 }
 
 @media screen and (min-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex: 2;
+        margin-top: 20px;
+    }
+    
     form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         gap: 100px;
         width: 90%;
+    }
+
+    form input, textarea {
+        width: 100%;
+        padding: 18px;
+        margin-bottom: 40px;
+        border-radius: 3px;
+        border: 1px solid #6A8C62;
+        font-family: "Unica One", sans-serif;
     }
 
     .required {
@@ -205,11 +225,28 @@ img{
     button {
         margin-top: 20px;
         width: 10%;
+        height: 30px;
         margin: 0 45%;
+        margin-bottom: 20px;
+        cursor: pointer;
     }
 
     button:hover {
         color: black;
     }
+    
+    footer {
+        margin-top: 30px;
+    }
 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    width: 100vw;
 }
