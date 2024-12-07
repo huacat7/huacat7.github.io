@@ -92,6 +92,7 @@ nav a {
     color: black;
     justify-self: right;
     align-self: flex-start;
+    margin-right: -25px;
 }
 
 .exit-icon {
@@ -111,7 +112,7 @@ nav a {
     display: inline-block;
 }
 
-nav a:hover {
+nav a:hover, a:focus{
     color: #FFFBF5;
 }
 
@@ -136,7 +137,7 @@ form {
 }
 
 form label {
-    color: #6A8C62;
+    color: #5D7B56;
     font-family: "Unica One", sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -169,7 +170,7 @@ form {
 }
 
 button {
-    background-color: #6A8C62;
+    background-color: #5D7B56;
     border-radius: 10px;
     width: 80px;
     height: 5%;
@@ -178,7 +179,7 @@ button {
     color: white;
 }
 
-button:hover {
+button:hover, button:focus{
     color: black;
 }
 
@@ -217,7 +218,7 @@ footer {
         padding: 35px;
         margin-bottom: 20px;
         border-radius: 3px;
-        border: 1px solid #6A8C62;
+        border: 1px solid #5D7B56;
         font-family: "Unica One", sans-serif;
     }
 
@@ -232,7 +233,7 @@ footer {
     }
 
     button {
-        background-color: #6A8C62;
+        background-color: #5D7B56;
         border-radius: 10px;
         width: 80px;
         height: 5%;
@@ -245,15 +246,15 @@ footer {
         width: 10%;
     }
 
-    button:hover {
+    button:hover, button:focus {
         color: black;
     }
 
     .butt {
         min-width: 350px;
         width: 100%;
-        padding-right: 180px;
-        padding-left: -60px;
+        padding-right: 70px;
+        padding-left: -30px;
         max-width: 700px;
 
     }

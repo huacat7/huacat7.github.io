@@ -111,7 +111,7 @@ nav a {
     display: inline-block;
 }
 
-nav a:hover {
+nav a:hover, a:focus {
     color: #FFFBF5;
 }
 
@@ -135,7 +135,7 @@ form {
 }
 
 form label {
-    color: #6A8C62;
+    color: #5D7B56;
     font-family: "Unica One", sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -146,12 +146,12 @@ form input, textarea {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 3px;
-    border: 1px solid #6A8C62;
+    border: 1px solid #5D7B56;
     font-family: "Unica One", sans-serif;
 }
 
 button {
-    background-color: #6A8C62;
+    background-color: #5D7B56;
     border-radius: 10px;
     width: 80px;
     height: 5%;
@@ -185,6 +185,10 @@ img{
     justify-self:flex-end;
 }
 
+p {
+    margin-top: 10px;
+}
+
 @media screen and (min-width: 768px) {
     main {
         display: flex;
@@ -208,7 +212,7 @@ img{
         padding: 18px;
         margin-bottom: 40px;
         border-radius: 3px;
-        border: 1px solid #6A8C62;
+        border: 1px solid #5D7B56;
         font-family: "Unica One", sans-serif;
     }
 
@@ -231,7 +235,7 @@ img{
         cursor: pointer;
     }
 
-    button:hover {
+    button:hover, button:focus {
         color: black;
     }
     
