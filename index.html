@@ -6,8 +6,8 @@
     <meta name = "viewport" content="width=device-width",
         initial-scale1, shrink-tofit="no">
     <title>Home</title>
-    <script src="js/responsive-nav.js"></script>
-    <link href = "styles/home.css" rel = "stylesheet">
+    <script src="js/script.js"></script>
+    <link href = "css/home.css" rel = "stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +21,18 @@
 <body>
     <header>
         <h1>Home</h1>
-        <div class = "styled">
-            <nav class="nav-collapse">
+        <div class = "open">
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger-icon">☰</span> <!-- Use a symbol or icon for the hamburger -->
+                <span class="exit-icon">✖</span> <!-- Use a symbol or icon for the exit -->
+            </button>
+    
+            <nav>
                 <ul>
                     <li><a href="activities.html">Activities</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="payment.html">Payment</a></li>
                     <li><a href="contact_us.html">Contact</a></li>
-                  </ul>
+                </ul>
             </nav>
         </div>
     </header>
@@ -46,11 +51,14 @@
         </div>
     </main>
     <footer>
-        logo placeholder
+        <img src="images/logo.jpg" alt="logo" class="logo">
     </footer>
 
-    <script src="js/fastclick.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/fixed-responsive-nav.js"></script>
+    <script>
+        document.querySelector('.nav-toggle').addEventListener('click', function () {
+        const header = document.querySelector('header');
+        header.classList.toggle('nav-open');
+        });
+      </script>
 </body>
 </html>
