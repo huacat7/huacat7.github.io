@@ -125,14 +125,62 @@ nav a:hover {
 /*Styled Form & image*/
 main {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+form {
+    width: 90%;
+    margin-bottom: -25px;
+}
+
+form label {
+    color: #6A8C62;
+    font-family: "Unica One", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+form input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #6A8C62;
+    font-family: "Unica One", sans-serif;
 }
 
 .butt {
-    display: flex;
-    width: 90%;
-    justify-content: center;  
-    align-items: center;
+    display: block;
+    margin: 15px 5%;
+    width: 95%;
+    max-width: 100%;
+    border-radius: 5px;
+    border-color: black;
+    padding-top: 20px;
+}
+
+form {
+    display: grid;
+    font-family: "Unica One", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    width: 95%;
+    margin: 15px auto;
+}
+
+button {
+    background-color: #6A8C62;
+    border-radius: 10px;
+    width: 80px;
+    height: 5%;
+    margin: 20px;
+    font-family: "Unica One", sans-serif;
+    color: white;
+}
+
+button:hover {
+    color: black;
 }
 
 footer {
@@ -171,9 +219,17 @@ footer {
     }
 
     button {
-        margin-top: 20px;
+        background-color: #6A8C62;
+        border-radius: 10px;
+        width: 80px;
+        height: 5%;
+        margin: 20px;
+        font-family: "Unica One", sans-serif;
+        color: white;
+    }
+
+    .submit {
         width: 10%;
-        margin: 0 45%;
     }
 
     button:hover {

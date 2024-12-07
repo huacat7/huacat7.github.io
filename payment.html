@@ -27,20 +27,44 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="activities.html">ACTIVITIES</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="contact_us.html">CONTACT US</a></li>
                 </ul>
             </nav>
             <h1 class="payment">PAYMENT</h1>
         </header>
 
         <main>
-            <img src="images/butt.jpg" alt="butt" class="butt">
-        </main>
+            <form>
+                <img src="images/butt.jpg" alt="butt" class="butt">
+                <div class="required">
+                    <label for="name">NAME: </label>
+                    <br><input type="text" id="name" name="name" placeholder="John Doe" required><br>
 
-        <a href="payment.html">
-            <button type="submit">SUBMIT</button>
-        </a>
-        <h2>We'll Be in Touch!</h2>
+                    <label for="card">CARD NUMBER: </label>
+                    <br><input type="text" id="card" name="card" placeholder="1234 5678 9012 3456" required ><br>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="card-expiry">Expiry (MM/YY)</label>
+                            <input type="text" id="card-expiry" name="card_expiry" placeholder="MM/YY" required />
+                        </div>
+                        <div class="col">
+                            <label for="card-cvv">CVV</label>
+                            <input type="text" id="card-cvv" name="card_cvv" placeholder="123" required />
+                        </div>
+                    </div>
+
+                    <label for="method">Payment Method</label>
+                <select id="method" name="payment_method" required>
+                    <option value="" disabled selected>Select a method</option>
+                    <option value="credit">Credit Card</option>
+                    <option value="debit">Debit Card</option>
+                </select>
+
+                <button type="submit">Pay Now</button>
+
+                
+        </main>
 
         <footer>
             <p>WhiskerCare</p>
