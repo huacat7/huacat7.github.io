@@ -250,6 +250,7 @@ footer {
     }
 
     .butt {
+        min-width: 350px;
         width: 100%;
         padding-right: 180px;
         padding-left: -60px;
