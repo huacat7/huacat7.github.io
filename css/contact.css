@@ -126,6 +126,7 @@ nav a:hover, a:focus {
     grid-row: 1;
     margin: 0;
     align-self: end;
+    margin-left: 9px;
 }
 
 /*Styled Form*/
