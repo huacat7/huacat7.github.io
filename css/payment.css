@@ -1,9 +1,17 @@
 /*Overall Styling: fonts, text_size, color*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html {
     margin: 0;
     height: 100%;
     width: 100%;
     background-color: #FFFBF5;
+    overflow: scroll;
 }
 
 h1 {
@@ -56,19 +64,18 @@ header {
     background-color: #E7D4B5;
     grid-template-columns: auto auto;
     grid-template-rows: auto;
-    padding: 10px 20px;
 }
 
 nav {
     justify-self: right;
     grid-column: 2;
     grid-row: 1;
-    margin-top: 45px;
+    margin-top: 10px;
     visibility: hidden;
 }
 
 nav li {
-    margin: 5px;
+    margin: 10px;
 }
 
 nav ul {
@@ -83,6 +90,7 @@ nav a {
 }
 
 .nav-toggle {
+    width: 40px;
     grid-column: 2;
     grid-row: 1;
     margin: 0;
@@ -93,7 +101,13 @@ nav a {
     color: black;
     justify-self: right;
     align-self: flex-start;
-    margin-right: -25px;
+    margin-left: auto;
+}
+
+.open {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
 }
 
 .exit-icon {
@@ -121,6 +135,7 @@ nav a:hover, a:focus{
     grid-column: 1;
     grid-row: 1;
     margin: 0;
+    margin-left: 9px;
     align-self: end;
 }
 
@@ -154,9 +169,8 @@ form input, textarea {
 }
 
 .butt {
-    display: block;
-    margin: 15px 15%;
-    width: 400px;
+    justify-self: center;
+    width: 90%;
     border-radius: 5px;
     border-color: black;
 }
@@ -174,10 +188,11 @@ button {
     background-color: #5D7B56;
     border-radius: 10px;
     width: 80px;
-    height: 5%;
-    margin: 20px;
+    height: auto;
     font-family: "Unica One", sans-serif;
     color: white;
+    justify-self: center;
+    margin-top: 10px;
 }
 
 button:hover, button:focus{
@@ -192,7 +207,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px; /* Adjust as needed */
+    height: 40px;
 }
 
 .logo{
@@ -245,6 +260,8 @@ footer {
 
     .submit {
         width: 10%;
+        height: 20px;
+
     }
 
     button:hover, button:focus {
@@ -254,10 +271,9 @@ footer {
     .butt {
         min-width: 350px;
         width: 100%;
-        padding-right: 70px;
-        padding-left: -30px;
+        padding-left: 50px;
         max-width: 700px;
-
+        margin-top: 15px;
     }
 
     footer {
@@ -266,13 +282,11 @@ footer {
 
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 header, main, footer {
     width: 100vw;
+}
+
+h1 {
+    margin-left: 30px;
 }
 

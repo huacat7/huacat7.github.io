@@ -70,7 +70,7 @@ main {
 }
 
 footer {
-    height: auto;
+    height: 40px;
     width: 100%;
     background-color: #E7D4B5;
     grid-row: 3/4;
@@ -161,6 +161,9 @@ nav ul {
 nav a {
     text-decoration: none;
     color: black;
+    font-size: 18px;
+    font-family: "Unica One", sans-serif;
+    font-weight: 400;
 }
 
 .nav-toggle {
@@ -200,18 +203,20 @@ nav a:hover {
 
 footer {
     margin-top: 20px;
-    width: 98%;
+    width: 100%;
     background-color: #E7D4B5;
-    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40px; 
+}
 
+footer > p {
+    margin-left: 20px;
 }
 
 .logo{
-    margin-right: 10px;
+    margin-right: 20px;
     margin-top: 5px;
     height: 30px;
     justify-self:flex-end;
@@ -220,7 +225,7 @@ footer {
 
 @media screen and (min-width: 769px) {
     body {
-        grid-template-rows: 0.2fr .9fr .1fr;
+        grid-template-rows: 0.2fr 1fr .1fr;
         grid-template-columns: 1fr;
     }
 

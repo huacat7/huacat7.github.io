@@ -50,25 +50,27 @@ p {
 
 /*Styling header with grid*/
 header {
-    display: grid;
-    margin: 0;
-    width: 100%;
+    display: flex;
     background-color: #E7D4B5;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto;
-    padding: 10px 20px;
+    align-items: flex-start;
 }
 
 nav {
     justify-self: right;
     grid-column: 2;
     grid-row: 1;
-    margin-top: 45px;
+    margin-top: 0;
     visibility: hidden;
 }
 
+.open {
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-end;
+}
+
 nav li {
-    margin: 5px;
+    margin: 10px;
 }
 
 nav ul {
@@ -83,6 +85,7 @@ nav a {
 }
 
 .nav-toggle {
+    width: 40px;
     grid-column: 2;
     grid-row: 1;
     margin: 0;
@@ -93,6 +96,7 @@ nav a {
     color: black;
     justify-self: right;
     align-self: flex-start;
+    margin-left: auto;
 }
 
 .exit-icon {
@@ -163,6 +167,7 @@ button {
 }
 
 h2 {
+    text-align: center;
     margin-top: 8px;
     display: flex;
     width: 100%;
@@ -188,6 +193,14 @@ img{
 
 p {
     margin-top: 10px;
+}
+
+.linkedButton {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: auto;
 }
 
 @media screen and (min-width: 768px) {
